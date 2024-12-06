@@ -1,0 +1,22 @@
+
+:root{
+    /* CSS HEX */
+    --primary1: #3300ffff;
+    --primary2: #3a1fa9ff;
+    --primary3: #392d6bff;
+    --primary4: #342d4cff;
+    --primary5: #191722ff;
+    --primary6: #131215ff;
+    --primary7: #000000ff;
+    --primary8: #ffffffff;
+
+    /* CSS HSL */
+    --primary1: hsla(252, 100%, 50%, 1);
+    --primary2: hsla(252, 69%, 39%, 1);
+    --primary3: hsla(252, 41%, 30%, 1);
+    --primary4: hsla(254, 26%, 24%, 1);
+    --primary5: hsla(251, 19%, 11%, 1);
+    --primary6: hsla(260, 8%, 8%, 1);
+    --primary7: hsla(0, 0%, 0%, 1);
+    --primary8: hsla(0, 0%, 100%, 1);
+}
