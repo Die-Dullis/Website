@@ -331,9 +331,6 @@ li a:hover.sc-cl-link {
     justify-content: center;
     pointer-events: none;
 }
-.highlight{
-    color: yellow;
-}
 :root{
     --primary-background: var(--primary14);
     --primary-text: var(--primary8);

@@ -1,5 +1,4 @@
 // JavaScript code
-
 function search_projects() {
     let input = document.getElementById('searchbar').value
     input = input.toLowerCase();
