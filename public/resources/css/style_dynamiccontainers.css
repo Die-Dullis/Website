@@ -6,12 +6,12 @@ Links: https://themodcraft.net
 textarea{
     width: 500px;
     height: 300px;
-    background-color: var(--primary4);
+    background-color: var(--primary5);
     max-height: 100%;
     max-width: 100%;
     color: var(--primary-text);
 }
-.Dynamic-containers{
+.dynamic-containers{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
