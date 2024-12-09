@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/resources/css/style_diashow.css">
+    <link rel="stylesheet" href="/public/resources/css/style_projects_search.css">
     
     <title>Project</title>
 </head>
@@ -40,10 +41,36 @@
       <span class="dot" onclick="currentSlide(2)"></span> 
       <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
-</section> 
+</section>
+
+<section>
+    <input id="searchbar" 
+               onkeyup="search_projects()" 
+               type="text" name="search" 
+               placeholder="Search Projects..">
+
+        <ul id='list'>
+            <li class="project">Cat</li>
+            <li class="project">Dog</li>
+            <li class="project">Elephant</li>
+            <li class="project">Fish</li>
+            <li class="project">Gorilla</li>
+            <li class="project">Monkey</li>
+            <li class="project">Turtle</li>
+            <li class="project">Whale</li>
+            <li class="project">Alligator</li>
+            <li class="project">Donkey</li>
+            <li class="project">Horse</li>
+        </ul>
+</section>
+
+<section>
+    
+</section>
 
 
 </main>
 <script src="/public/resources/scripts/diashow.js"></script>
+<script src="/public/resources/scripts/search_projects.js"></script>
 </body>
 </html>
