@@ -53,6 +53,16 @@ img{
     -webkit-box-shadow: 1px -1px 77px -7px var(--primary1);
     -moz-box-shadow: 1px -1px 77px -7px var(--primary1);
 }
+.empty{
+    width: 83%;
+    background-color: rgba(0, 0, 0, 0);
+}
+.empty:hover{
+    transform: scale(1);
+    box-shadow: 1px -1px 77px -7px;
+    -webkit-box-shadow: 1px -1px 77px -7px;
+    -moz-box-shadow: 1px -1px 77px -7px;
+}
 .content-text{
     margin: 15px;
 }
