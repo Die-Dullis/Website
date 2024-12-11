@@ -18,6 +18,16 @@
     border-radius: 5px;
     width: 50%;
     box-sizing: border-box;
+    background-color: var(--primary6);
+    border: none;
+    color: var(--primary-text);
+    border-bottom: 2px solid var(--primary2);
+}
+#searchbar:active, #searchbar:focus{
+    outline: none;
+    border: none;
+    background-color: var(--primary6);
+    border-bottom: 2px solid var(--primary2);
 }
 
 #list {

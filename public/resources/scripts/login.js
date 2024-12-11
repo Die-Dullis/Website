@@ -23,7 +23,7 @@ $(document).ready(function () {
     $('input').blur(function () {
 
         // User Name
-        if ($(this).hasClass('name')) {
+        if ($(this).hasClass('username-reg')) {
             if ($(this).val().length === 0) {
                 setErrorClass($(this), "Name darf nicht leer sein");
                 usernameError = true;
@@ -38,7 +38,7 @@ $(document).ready(function () {
             }
         }
         // Email
-        if ($(this).hasClass('email')) {
+        if ($(this).hasClass('email-reg')) {
             if ($(this).val().length == '') {
                 setErrorClass($(this), "Email darf nicht leer sein");
                 emailError = true;
@@ -48,13 +48,6 @@ $(document).ready(function () {
 			} else {
                 setSuccessClass($(this));
                 emailError = false;
-            }
-        }
-
-        // Phone
-        if ($(this).hasClass('phone')) {
-            if ($(this).val().length != '') {
-                setSuccessClass($(this));
             }
         }
 
@@ -70,10 +63,10 @@ $(document).ready(function () {
         }
 
         // PassWord confirmation
-        if ($('.pass').val() !== $('.passConfirm').val()) {
+        if ($('.password-reg').val() !== $('.password-reg-conf').val()) {
             setErrorClass($('.passConfirm'), "Passwörter stimmen nicht überein");
             passConfirm = false;
-        } else if ($('.pass').val() == $('.passConfirm').val() && $('.passConfirm').val().length >= 8) {
+        } else if ($('.password-reg').val() == $('.password-reg-conf').val() && $('.password-reg-conf').val().length >= 8) {
             setSuccessClass($('.passConfirm'));
             passConfirm = false;
         }
