@@ -7,11 +7,12 @@
   <link rel="stylesheet" type="text/css" href="../resources/css/style_login.css">
   <link rel="stylesheet" type="text/css" href="../resources/css/colorschema.css">
   <link rel="stylesheet" type="text/css" href="../resources/scripts/login.js">
+  <link rel="stylesheet" type="text/css" href="../resources/scripts/logtog.js">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="actions-cont">
-  <div class="login-container">
+  <div class="login-container off">
     <h2>Login</h2>
     <form action="/login" method="post" class="login-form">
       <div class="input-group">
@@ -48,5 +49,6 @@
     </form>
   </div>
 </div>
+<button onclick="togle()"></button>
 </body>
 </html>
