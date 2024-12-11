@@ -1,8 +1,8 @@
 // Data for Navbar and Sidebar items
 const navItems = [
     { name: "Home", link: "/home" },
-    { name: "Music", link: "" },
-    { name: "Server", link: "" },
+    { name: "News", link: "/news" },
+    { name: "Impressum", link: "/impressum" },
     { name: "Downloads", link: "/" },
     { name: "Drone", link: "/" },
     { name: "Programming", link: "/" },

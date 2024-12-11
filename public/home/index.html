@@ -5,6 +5,7 @@
     <title>Home | DieDullis</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="../resources/scripts/sidebar.js"></script>
+    <script type="text/javascript" src="../resources/scripts/nav-gen.js"></script>
     <script type="text/javascript" src="../resources/scripts/search.js"></script>
     <link rel="stylesheet" href="../resources/css/style_navbar.css">
     <link rel="stylesheet" href="../resources/css/style_dynamiccontainers.css">
@@ -28,13 +29,13 @@
                             <a href="#" class="openSidebarLink ac-gn-link ac-gn-link-Sidebar">X</a>
                         </li>
                         <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
-                            <a class="ac-gn-link ac-gn-link-home" href="/public/home">404</a>
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/home">Home</a>
                         </li>
                         <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
-                            <a class="ac-gn-link ac-gn-link-home" href="/public/home">404</a>
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/project">Projects</a>
                         </li>
                         <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
-                            <a class="ac-gn-link ac-gn-link-home" href="/public/home">404</a>
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/404">404</a>
                             <ul class="ac-gn-sub-list">
                                 <li class="ac-gn-sun-item ac-gn-sub-item-menu ac-gn-sub-blank">
                                     <a class="ac-gn-sub-link ac-gn-sub-link-blank" href="müllengmbh/medienformate_galerie.html">Bildergalerie</a>
@@ -59,14 +60,14 @@
                     </ul>
                 </div>
             </nav>
-            <div class="search_frame" id="abId0.8420704960032439">
-                <div class="Filter search_spacing">
+            <div class="search_frame">
+                <div class="filter search_spacing">
                     <i class="fa fa-filter w3-xlarge" aria-hidden="true"></i>
                 </div>
-                <div class="Search_icon search_spacing ">
+                <div class="search_icon search_spacing ">
                     <i class="fa fa-search w3-xlarge" aria-hidden="true"></i>
                 </div>
-                <div class="Search search_spacing">
+                <div class="search search_spacing">
                     <input class="Search_input" id="searchInput" placeholder="Search..." autocomplete="on" aria-label="Search field">
                 </div>
             </div>
@@ -103,14 +104,23 @@
             <p class="content-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
         <div class="content-box empty"></div>
-        <div class="content-box half">
-            <h1 class="content-title">News</h1>
-            <p class="content-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <div class="content-box big">
+            <form id="search" class="search_frame">
+                <input type="text" class="search" accept="text/plain" name="search" placeholder="Search..." required>
+                <button class="" type="submit"><i class="fa fa-search w3-xlarge" aria-hidden="true"></i></button>
+                <button class=""><i class="fa fa-filter w3-xlarge" aria-hidden="true"></i></button>
+            </form>
         </div>
         <div class="content-box half">
             <h1 class="content-title">News</h1>
             <p class="content-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
+        <div class="content-box half">
+            <h1 class="content-title">News</h1>
+            <p class="content-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+    <section class="dynamic-containers" id="repo-list">
     </section>
 </main>
 
