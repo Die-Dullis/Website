@@ -2,15 +2,7 @@
 const navItems = [
     { name: "Home", link: "/home" },
     { name: "News", link: "/news" },
-    { name: "Impressum", link: "/impressum" },
-    { name: "Downloads", link: "/" },
-    { name: "Drone", link: "/" },
-    { name: "Programming", link: "/" },
-    { name: "Gaming", link: "/" },
-    { name: "Contacts", link: "/" },
-    { name: "About", link: "/" },
-    { name: "Privacy Policy", link: "/" },
-    { name: "News", link: "/" }
+    { name: "Impressum", link: "/impressum" }
 ];
 
 // DOM elements

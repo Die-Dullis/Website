@@ -3,45 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/resources/css/style_diashow.css">
-    <link rel="stylesheet" href="/public/resources/css/style_projects_search.css">
+    <script type="text/javascript" src="../resources/scripts/repo.js"></script>
+    <script type="text/javascript" src="../resources/scripts/sidebar.js"></script>
+    <link rel="stylesheet" href="../resources/css/style_git.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/resources/css/style_diashow.css">
+    <link rel="stylesheet" type="text/css" href="/public/resources/css/style_dynamiccontainers.css">
+    <link rel="stylesheet" type="text/css" href="/public/resources/css/style_navbar.css">
+    <link rel="stylesheet" type="text/css" href="/public/resources/css/colorschema.css">
+    <link rel="stylesheet" type="text/css" href="/public/resources/css/style_projects.css">
+    <link rel="stylesheet" type="text/css" href="/public/resources/css/style_projects_search.css">
     
-    <title>Project</title>
+    <title>Project | Die Dullis</title>
 </head>
 <body>
 <main>
+    <section class="header-section">
+        <div class="ac-gn-logo-container">
+            <div class="ac-gn-logo-cont">
+                <img style="width: 100%;height: 100%" src="../resources/images/logo.png">
+            </div>
+        </div>
+        <div class="header_bar">
+            <nav class="ac-globalnav">
+                <div class="ac-gn-content">
+                    <ul class="ac-gn-list">
+                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Sidebar">
+                            <a href="#" class="openSidebarLink ac-gn-link ac-gn-link-Sidebar">X</a>
+                        </li>
+                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/home">Home</a>
+                        </li>
+                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/project">Projects</a>
+                        </li>
+                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/404">404</a>
+                            <ul class="ac-gn-sub-list">
+                                <li class="ac-gn-sun-item ac-gn-sub-item-menu ac-gn-sub-blank">
+                                    <a class="ac-gn-sub-link ac-gn-sub-link-blank" href="müllengmbh/medienformate_galerie.html">Bildergalerie</a>
+                                </li>
+                                <li class="ac-gn-sun-item ac-gn-sub-item-menu ac-gn-sub-blank">
+                                    <a class="ac-gn-sub-link ac-gn-sub-link-blank" href="müllengmbh/medienformate_videos.html">Videos</a>
+                                </li>
+                                <li class="ac-gn-sun-item ac-gn-sub-item-menu ac-gn-sub-blank">
+                                    <a class="ac-gn-sub-link ac-gn-sub-link-blank" href="müllengmbh/medienformate_pdf.html">PDF</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/home">404</a>
+                        </li>
+                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/home">404</a>
+                        </li>
+                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/home">404</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="search_frame">
+                <div class="filter search_spacing">
+                    <i class="fa fa-filter w3-xlarge" aria-hidden="true"></i>
+                </div>
+                <div class="search_icon search_spacing ">
+                    <i class="fa fa-search w3-xlarge" aria-hidden="true"></i>
+                </div>
+                <div class="search search_spacing">
+                    <input class="Search_input" id="searchInput" placeholder="Search..." autocomplete="on" aria-label="Search field">
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">☰
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul class="ac-dn-list">
+                        <li class="ac-dn-item ac-dn-item-menu ac-dn-Home">
+                            <a class="ac-dn-link ac-dn-link-home" href="/home">404</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Sec_Sidebar">
+        <div class="toggleSidebarButton sidebar_trigger" onclick="sidebarInstance.toggleSidebar()"></div>
+        <div class="sidebar">
+            <ul  class="sc-gn-list">
+                <li class="sc-gn-item sc-gn-item-menu sc-gn-Home">
+                    <a class="sc-gn-link sc-gn-link-home" href="/home">404</a>
+                </li>
+                <li class="sc-gn-item sc-gn-item-menu sc-gn-Sidebar">
+                    <a href="#" class="closeButton sc-gn-link sc-gn-link-Sidebar" onclick="sidebarInstance.closeSidebar()">✕ Close Sidebar</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="dynamic-containers">
+        <div>
 
-<section class="slideshow-container">   
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="/public/resources/images/test.jpg" style=width:100%>
-      <div class="text">1</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="/public/resources/images/test.jpg" style=width:100%>
-      <div class="text">2</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="/public/resources/images/test.jpg" style=width:100%>
-      <div class="text">3</div>
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-</section>
+        </div>
+    </section>
+    <section class="dynamic-containers" id="repo-list">
+        <div class="content-box big">
+            <form id="search" class="searchcont">
+                <input type="text" class="search" accept="text/plain" name="search" placeholder="Search..." required>
+                <button class="" type="submit"><i class="fa fa-search w3-xlarge" aria-hidden="true"></i></button>
+                <button class=""><i class="fa fa-filter w3-xlarge" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </section>
+
+
+    <!--
+    <section class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="/public/resources/images/test.jpg" style=width:100%>
+          <div class="text">1</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="/public/resources/images/test.jpg" style=width:100%>
+          <div class="text">2</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="/public/resources/images/test.jpg" style=width:100%>
+          <div class="text">3</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
 
 <section>
     <input id="searchbar" 
@@ -50,7 +157,10 @@
                placeholder="Search Projects..">
 
         <ul id='list'>
-            <li class="project">Cat</li>
+            <li class="project">
+                <p class=>hallo</p>
+                <img src="../resources/images/logo.png">
+            </li>
             <li class="project">Dog</li>
             <li class="project">Elephant</li>
             <li class="project">Fish</li>
@@ -68,7 +178,7 @@
     
 </section>
 
-
+--->
 </main>
 <script src="/public/resources/scripts/diashow.js"></script>
 <script src="/public/resources/scripts/search_projects.js"></script>
