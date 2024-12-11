@@ -23,19 +23,22 @@ document.addEventListener('DOMContentLoaded', function() {
             repos.forEach(repo => {
                 const li = document.createElement('li');
                 li.classList.add('content-box');
-
+                
+                const div = document.createElement('div');
+                div.classList.add('card')
+                li.appendChild(div);
                 // Repository name
                 const link = document.createElement('a');
                 link.href = repo.html_url;
                 link.textContent = repo.name;
                 link.target = "_blank"; // Open in new tab
-                li.appendChild(link);
+                div.appendChild(link);
                 link.classList.add('card-content')
 
                 // Description
                 const description = document.createElement('p');
                 description.textContent = repo.description || 'No description';
-                li.appendChild(description);
+                div.appendChild(description);
                 description.classList.add('card-content')
 
                 // Primary language with color dot
@@ -47,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     langDot.style.backgroundColor = languageColors[repo.language] || '#cccccc';
                     lang.textContent = `Language: ${repo.language}`;
                     lang.prepend(langDot);
-                    li.appendChild(lang);
+                    div.appendChild(lang);
                 }
 
                 // Last updated
@@ -56,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 activity.classList.add('activity');
                 activity.classList.add('card-content')
                 activity.textContent = `Last updated: ${updatedAt}`;
-                li.appendChild(activity);
+                div.appendChild(activity);
 
                 // Append to list
                 repoList.appendChild(li);
