@@ -1,30 +1,20 @@
-function searchText() {
-    const input = document.getElementById('searchInput').value.toLowerCase();
-    const paragraphs = document.querySelectorAll('p');
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput'); // The search input field
+    const repoList = document.getElementById('repo-list'); // The list of repositories
 
-    paragraphs.forEach(paragraph => {
-        // Remove previous highlights
-        paragraph.innerHTML = paragraph.textContent;
-
-        if (input) {
-            const regex = new RegExp(input, 'gi');
-            paragraph.innerHTML = paragraph.innerHTML.replace(regex, match => `<span class="highlight">${match}</span>`);
-        }
-    });
-}
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('searchInput').addEventListener('input', function () {
+    searchInput.addEventListener('input', function() {
         const searchValue = this.value.trim().toLowerCase();
-        const cards = document.querySelectorAll('.Blog .post');
+        const cards = repoList.querySelectorAll('li .card');
 
         cards.forEach(card => {
-            const projectName = card.querySelector('#title').textContent.trim().toLowerCase();
-            if (projectName.includes(searchValue)) {
-                card.style.display = 'flex';
+            const repoName = card.querySelector('a').textContent.trim().toLowerCase(); // Get repository name
+            const description = card.querySelector('p')?.textContent.trim().toLowerCase() || ''; // Get description if present
+
+            // Match against repo name or description
+            if (repoName.includes(searchValue) || description.includes(searchValue)) {
+                card.closest('li').style.display = ''; // Show the <li> element
             } else {
-                card.style.display = 'none';
+                card.closest('li').style.display = 'none'; // Hide the <li> element
             }
         });
     });

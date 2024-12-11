@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="../resources/scripts/repo.js"></script>
     <script type="text/javascript" src="../resources/scripts/sidebar.js"></script>
+    <script type="text/javascript" src="../resources/scripts/search.js"></script>
     <link rel="stylesheet" href="../resources/css/style_git.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/public/resources/css/style_diashow.css">
@@ -144,21 +145,11 @@
     </section>
     <section class="dynamic-containers" id="repo-list">
         <div class="content-box big">
-            <form id="search" class="searchcont">
-                <input type="text" class="search" accept="text/plain" name="search" placeholder="Search..." required>
-                <button class="" type="submit"><i class="fa fa-search w3-xlarge" aria-hidden="true"></i></button>
-                <button class=""><i class="fa fa-filter w3-xlarge" aria-hidden="true"></i></button>
-            </form>
+            <input type="text" id="searchInput" class="search" accept="text/plain" name="search" placeholder="Search..." required>
         </div>
     </section>
-
-
-    <!--
-    <section class="slideshow-container">
-
-    </section>
-
 <section>
+    <!--
     <input id="searchbar" 
                onkeyup="search_projects()" 
                type="text" name="search" 

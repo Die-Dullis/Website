@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 link.textContent = repo.name;
                 link.target = "_blank"; // Open in new tab
                 div.appendChild(link);
-                link.classList.add('card-content')
+                link.classList.add('card-content');
 
                 // Description
                 const description = document.createElement('p');
