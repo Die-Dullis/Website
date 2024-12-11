@@ -23,10 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
             repos.forEach(repo => {
                 const li = document.createElement('li');
                 li.classList.add('content-box');
+                li.id = repo.name;
                 
                 const div = document.createElement('div');
                 div.classList.add('card')
                 li.appendChild(div);
+                
                 // Repository name
                 const link = document.createElement('a');
                 link.href = repo.html_url;
