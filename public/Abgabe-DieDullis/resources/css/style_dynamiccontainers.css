@@ -1,0 +1,72 @@
+/*
+Author:TheModCraft Network
+Contact: support@themodcraft.net
+Links: https://themodcraft.net
+*/
+textarea{
+    width: 500px;
+    height: 300px;
+    background-color: var(--primary5);
+    max-height: 100%;
+    max-width: 100%;
+    color: var(--primary-text);
+}
+.dynamic-containers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media screen and (max-width: 900px){
+    .content-box{
+        font-size: 2vw;
+    }
+}
+.content-box{
+    overflow: hidden;
+    background: var(--primary6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    width: 25%;
+    margin: 2%;
+    border-radius: 15px;
+    color: var(--primary-text);
+    font-family: system-ui;
+    transition:  500ms ease 0s;
+}
+img{
+    width: 80%;
+    height: auto;
+}
+.middle{
+    width: 54%;
+}
+.half{
+    width: 39.5%;
+}
+.big{
+    width: 83%;
+}
+.content-box:hover{
+    transform: scale(1.02);
+    box-shadow: 1px -1px 77px -7px var(--primary1);
+    -webkit-box-shadow: 1px -1px 77px -7px var(--primary1);
+    -moz-box-shadow: 1px -1px 77px -7px var(--primary1);
+}
+.empty{
+    width: 83%;
+    background-color: rgba(0, 0, 0, 0);
+    height: 112px;
+}
+.empty:hover{
+    transform: scale(1);
+    box-shadow: 1px -1px 77px -7px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 1px -1px 77px -7px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 1px -1px 77px -7px rgba(0, 0, 0, 0);
+}
+.content-text{
+    margin: 15px;
+}

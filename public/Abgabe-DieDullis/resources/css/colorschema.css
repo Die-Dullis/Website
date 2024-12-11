@@ -1,0 +1,20 @@
+:root{
+    /* CSS HEX */
+    --primary1: rgb(51, 0, 255);
+    --primary2: #3a1fa9ff;
+    --primary3: #392d6bff;
+    --primary4: #342d4cff;
+    --primary5: #191722ff;
+    --primary6: #131215ff;
+    --primary7: #000000ff;
+    --primary8: #ffffffff;
+    --primary9: #D9D9D9FF;
+    --primary10: #9E9E9EFF;
+    --primary11: #828282FF;
+    --primary12: #696969FF;
+    --primary13: #4A4A4AFF;
+    --primary14: #3c3c3c;
+    --primary15: #212121FF;
+    --primary-transparency: rgba(0, 0, 0, 0.55);
+    --primary-text: #ffffff;
+}

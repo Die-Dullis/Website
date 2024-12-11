@@ -1,0 +1,31 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--primary9);
+}
+.card a{
+    text-decoration: none;
+    color: var(--primary1);
+    font-family: system-ui;
+}
+.lang, .activity {
+    font-size: 0.9em;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+.lang-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+}
+.activity-graph {
+    margin-top: 20px;
+    text-align: center;
+}
+.card-content{
+    margin: 5px 15px;
+}
