@@ -1,11 +1,9 @@
 .item1 {
-    background-color: lightblue;
     width: 30%;
     flex: 1 1 30%; /* Flex-Wert für jedes Element */
 }
 
 .item2 {
-    background-color: lightgreen;
     width: 70%;
     flex: 1 1 70%; /* Flex-Wert für jedes Element */
 }
@@ -20,6 +18,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    
 }
 
 .lelele {
