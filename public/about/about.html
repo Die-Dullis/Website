@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | DieDullis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../resources/scripts/sidebar.js"></script>
+    <script type="text/javascript" src="../resources/scripts/repo.js"></script>
+    <script type="text/javascript" src="../resources/scripts/nav-gen.js"></script>
+    <script type="text/javascript" src="../resources/scripts/search.js"></script>
+    <link rel="stylesheet" href="../resources/css/style_navbar.css">
+    <link rel="stylesheet" href="../resources/css/style_dynamiccontainers.css">
+    <link rel="stylesheet" href="../resources/css/style_home.css">
+    <link rel="stylesheet" href="../resources/css/colorschema.css">
+
+</head>
+<body>
+<main>
+    <section class="header-section">
+        <div class="ac-gn-logo-container">
+            <div class="ac-gn-logo-cont">
+                <img style="width: 100%;height: 100%" src="../resources/images/logo.png">
+            </div>
+        </div>
+        <div class="header_bar">
+            <nav class="ac-globalnav">
+                <div class="ac-gn-content">
+                    <ul class="ac-gn-list">
+                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Sidebar">
+                            <a href="#" class="openSidebarLink ac-gn-link ac-gn-link-Sidebar">X</a>
+                        </li>
+                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/home">Home</a>
+                        </li>
+                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/project">Projects</a>
+                        </li>
+                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/404">404</a>
+                            <ul class="ac-gn-sub-list">
+                                <li class="ac-gn-sun-item ac-gn-sub-item-menu ac-gn-sub-blank">
+                                    <a class="ac-gn-sub-link ac-gn-sub-link-blank" href="müllengmbh/medienformate_galerie.html">Bildergalerie</a>
+                                </li>
+                                <li class="ac-gn-sun-item ac-gn-sub-item-menu ac-gn-sub-blank">
+                                    <a class="ac-gn-sub-link ac-gn-sub-link-blank" href="müllengmbh/medienformate_videos.html">Videos</a>
+                                </li>
+                                <li class="ac-gn-sun-item ac-gn-sub-item-menu ac-gn-sub-blank">
+                                    <a class="ac-gn-sub-link ac-gn-sub-link-blank" href="müllengmbh/medienformate_pdf.html">PDF</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/home">404</a>
+                        </li>
+                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/home">404</a>
+                        </li>
+                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
+                            <a class="ac-gn-link ac-gn-link-home" href="/public/home">404</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="search_frame">
+                <div class="filter search_spacing">
+                    <i class="fa fa-filter w3-xlarge" aria-hidden="true"></i>
+                </div>
+                <div class="search_icon search_spacing ">
+                    <i class="fa fa-search w3-xlarge" aria-hidden="true"></i>
+                </div>
+                <div class="search search_spacing">
+                    <input class="Search_input" id="searchInput" placeholder="Search..." autocomplete="on" aria-label="Search field">
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">☰
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <ul class="ac-dn-list">
+                        <li class="ac-dn-item ac-dn-item-menu ac-dn-Home">
+                            <a class="ac-dn-link ac-dn-link-home" href="/home">404</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="Sec_Sidebar">
+        <div class="toggleSidebarButton sidebar_trigger" onclick="sidebarInstance.toggleSidebar()"></div>
+        <div class="sidebar">
+            <ul  class="sc-gn-list">
+                <li class="sc-gn-item sc-gn-item-menu sc-gn-Home">
+                    <a class="sc-gn-link sc-gn-link-home" href="/home">404</a>
+                </li>
+                <li class="sc-gn-item sc-gn-item-menu sc-gn-Sidebar">
+                    <a href="#" class="closeButton sc-gn-link sc-gn-link-Sidebar" onclick="sidebarInstance.closeSidebar()">✕ Close Sidebar</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="dynamic-containers">
+        <div class="content-box big">
+            <h1 class="content-title">News</h1>
+            <p class="content-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="content-box empty"></div>
+        <div class="content-box big">
+            <form id="search" class="search_frame">
+                <input type="text" class="search" accept="text/plain" name="search" placeholder="Search..." required>
+                <button class="" type="submit"><i class="fa fa-search w3-xlarge" aria-hidden="true"></i></button>
+                <button class=""><i class="fa fa-filter w3-xlarge" aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <div class="content-box half">
+            <h1 class="content-title">News</h1>
+            <p class="content-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="content-box half">
+            <h1 class="content-title">News</h1>
+            <p class="content-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+    <section class="dynamic-containers" id="repo-list">
+    </section>
+</main>
+
+
+</body>
+</html>
