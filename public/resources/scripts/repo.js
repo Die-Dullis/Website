@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(repos => {
             repos.forEach(repo => {
                 const li = document.createElement('li');
-                li.classList.add('content-box');
+                li.classList.add('content-box2');
                 li.id = repo.name;
                 
                 const div = document.createElement('div');
