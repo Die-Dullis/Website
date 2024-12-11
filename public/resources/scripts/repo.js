@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const ORG_NAME = ''; // Replace with your GitHub org name
+    const ORG_NAME = 'Die-Dullis'; // Replace with your GitHub org name
     const repoList = document.getElementById('repo-list');
     const languageColors = {
         'JavaScript': '#f1e05a',
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(repos => {
             repos.forEach(repo => {
                 const li = document.createElement('li');
-                li.classList.add('card');
+                li.classList.add('content-box');
 
                 // Repository name
                 const link = document.createElement('a');
