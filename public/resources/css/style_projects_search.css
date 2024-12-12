@@ -64,8 +64,8 @@
 }
 
 @media screen and (max-width: 768px){
-    .content-box2{
-        width: 40%;
+    .content-search{
+        width: 80%;
     }
 }
 
