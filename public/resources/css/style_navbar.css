@@ -323,6 +323,7 @@ li a:hover.sc-cl-link {
 .ac-gn-logo-cont{
     height: 58px;
     width: 58px;
+    transition: 300ms linear all;
 }
 .ac-gn-logo-container{
     position: absolute;
@@ -330,6 +331,15 @@ li a:hover.sc-cl-link {
     display: flex;
     justify-content: center;
     pointer-events: none;
+}
+@media screen and (max-width: 722px) {
+    .ac-gn-logo-cont{
+        transform: rotate(90deg);
+        transition: 300ms linear all;
+    }
+    .ac-gn-logo-cont img{
+        content: url("../images/logo3.png");
+    }
 }
 :root{
     --primary-background: var(--primary14);
