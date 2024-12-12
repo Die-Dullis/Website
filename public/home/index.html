@@ -27,9 +27,6 @@
             <nav class="ac-globalnav">
                 <div class="ac-gn-content">
                     <ul class="ac-gn-list">
-                        <li class="ac-gn-item ac-gn-item-menu ac-gn-Sidebar">
-                            <a href="#" class="openSidebarLink ac-gn-link ac-gn-link-Sidebar">X</a>
-                        </li>
                         <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
                             <a class="ac-gn-link ac-gn-link-home" href="/public/home">Home</a>
                         </li>
@@ -40,7 +37,7 @@
                             <a class="ac-gn-link ac-gn-link-home" href="/public/about">About us</a>
                         </li>
                         <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
-                                          <a class="ac-gn-link ac-gn-link-home" href="/public/impressum">Impressum</a>
+                           <a class="ac-gn-link ac-gn-link-home" href="/public/impressum">Impressum</a>
                         </li>
                     </ul>
                 </div>
@@ -61,7 +58,16 @@
                 <div class="dropdown-content">
                     <ul class="ac-dn-list">
                         <li class="ac-dn-item ac-dn-item-menu ac-dn-Home">
-                            <a class="ac-dn-link ac-dn-link-home" href="/home">404</a>
+                            <a class="ac-dn-link ac-dn-link-home" href="/public/home">Home</a>
+                        </li>
+                        <li class="ac-dn-item ac-dn-item-menu ac-dn-Home">
+                            <a class="ac-dn-link ac-dn-link-home" href="/public/project">Projects</a>
+                        </li>
+                        <li class="ac-dn-item ac-dn-item-menu ac-dn-Home">
+                            <a class="ac-dn-link ac-dn-link-home" href="/public/about">About us</a>
+                        </li>
+                        <li class="ac-dn-item ac-dn-item-menu ac-dn-Home">
+                            <a class="ac-dn-link ac-dn-link-home" href="/public/impressum">Impressum</a>
                         </li>
                     </ul>
                 </div>
@@ -73,7 +79,16 @@
         <div class="sidebar">
             <ul  class="sc-gn-list">
                 <li class="sc-gn-item sc-gn-item-menu sc-gn-Home">
-                    <a class="sc-gn-link sc-gn-link-home" href="/home">404</a>
+                    <a class="sc-gn-link sc-gn-link-home" href="/public/home">Home</a>
+                </li>
+                <li class="sc-gn-item sc-gn-item-menu sc-gn-Home">
+                    <a class="sc-gn-link sc-gn-link-home" href="/public/project">Projects</a>
+                </li>
+                <li class="sc-gn-item sc-gn-item-menu sc-gn-Home">
+                    <a class="sc-gn-link sc-gn-link-home" href="/public/about">About us</a>
+                </li>
+                <li class="sc-gn-item sc-gn-item-menu sc-gn-Home">
+                    <a class="sc-gn-link sc-gn-link-home" href="/public/impressum">Impressum</a>
                 </li>
                 <li class="sc-gn-item sc-gn-item-menu sc-gn-Sidebar">
                     <a href="#" class="closeButton sc-gn-link sc-gn-link-Sidebar" onclick="sidebarInstance.closeSidebar()">✕ Close Sidebar</a>
@@ -85,9 +100,7 @@
         <div class="content-box big">
             <img style="width: 100%;height: 100%" src="../resources/images/diedullis.png" alt="things">
         </div>
-        
         <div class="content-box big">
-            
             <div class="aktuel">
                 <div class="aktuel1">
                     <img style="width: 100%;height: 100%" src="../resources/images/websitearbeit.png">
@@ -96,7 +109,6 @@
                     <h1 class="content-title">Aktuel</h1>
                     <p class="content-text">Aktuel arbeiten wir an dieser Website</p>
                     <a href="https://github.com/Die-Dullis/Website" class="aktuelbutton">Go to GitHub Page</a>
-
                 </div>
             </div>
         </div>
@@ -112,6 +124,9 @@
     <section class="dynamic-containers" id="repo-list">
         <div class="content-box big">
             <input type="text" id="searchbar" class="search" onkeyup="search_projects()" accept="text/plain" name="search" placeholder="Search..." required>
+        </div>
+        <div class="content-box big warning off">
+            <h1>Do to raid Limits from the GitHub API We are not able to provide you with the correct Content</h1>
         </div>
     </section>
 </main>
