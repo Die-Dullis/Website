@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
         'Ruby': '#701516',
         'Go': '#00ADD8',
         'HTML': '#e34c26'
-        // Add more languages and their colors as needed
     };
 
     fetch(`https://api.github.com/orgs/${ORG_NAME}/repos`)
@@ -22,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(repos => {
             repos.forEach(repo => {
                 const li = document.createElement('li');
-                li.classList.add('content-box2');
+                li.classList.add('content-box','half','content-search');
                 li.id = repo.name;
                 
                 const div = document.createElement('div');
