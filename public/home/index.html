@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/5a4c0976d6.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../resources/scripts/nav-gen.js"></script>
     <script type="text/javascript" src="../resources/scripts/sidebar.js"></script>
-    <script type="text/javascript" src="../resources/scripts/search.js"></script>
+    <script src="/public/resources/scripts/search_projects.js"></script>
     <script type="text/javascript" src="../resources/scripts/repo.js"></script>
     <link rel="stylesheet" href="../resources/css/style_navbar.css">
     <link rel="stylesheet" href="../resources/css/style_git.css">
@@ -100,19 +100,6 @@
                 </div>
             </div>
         </div>
-
-
-
-        <div class="content-box empty"></div>
-        <div class="content-box big">
-            <form id="search" class="search_frame">
-                <label>
-                    <input type="text" class="search" accept="text/plain" name="search" placeholder="Search..." required>
-                </label>
-                <button class="" type="submit"><i class="fa fa-search w3-xlarge" aria-hidden="true"></i></button>
-                <button class=""><i class="fa fa-filter w3-xlarge" aria-hidden="true"></i></button>
-            </form>
-        </div>
         <div class="content-box half">
             <h1 class="content-title">News</h1>
             <p class="content-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
@@ -122,6 +109,10 @@
             <p class="content-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
     </section>
-    <section class="dynamic-containers" id="repo-list"></section>
+    <section class="dynamic-containers" id="repo-list">
+        <div class="content-box big">
+            <input type="text" id="searchbar" class="search" onkeyup="search_projects()" accept="text/plain" name="search" placeholder="Search..." required>
+        </div>
+    </section>
 </main>
 

@@ -89,3 +89,9 @@ img{
 .content-text{
     margin: 15px;
 }
+
+@media screen and (max-width: 768px){
+    .content-search{
+        width: 80%;
+    }
+}

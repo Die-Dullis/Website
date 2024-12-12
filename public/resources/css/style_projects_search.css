@@ -63,11 +63,7 @@
     transition:  500ms ease 0s;
 }
 
-@media screen and (max-width: 768px){
-    .content-search{
-        width: 80%;
-    }
-}
+
 
 
 @keyframes fadeIn {
