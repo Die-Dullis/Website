@@ -5,3 +5,33 @@ body{
     color: green;
     box-shadow: 0.0 0.1rem 2rem 0px rgba(8, 255, 0, 0.6);
 }
+
+.aktuel1 {
+    width: 30%;
+    flex: 1 1 30%; /* Flex-Wert für jedes Element */
+}
+
+
+.aktuel2 {
+    width: 70%;
+    flex: 1 1 70%; /* Flex-Wert für jedes Element */
+}
+
+
+.aktuel {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.aktuelbutton {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: white;
+    background-color: green;
+    text-decoration: none;
+}
