@@ -12,22 +12,22 @@
   <link type="text/css" rel="stylesheet" href="../resources/css/style_navbar.css">
   <link type="text/css" rel="stylesheet" href="../resources/css/colorschema.css">
   <script type="text/javascript" src="../resources/scripts/sidebar.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../resources/scripts/offloader.js"></script>
+  <link rel="stylesheet" href="../resources/css/style_footer.css">
 </head>
 <body>
-<main class="Main">
+<main>
   <section class="header-section">
     <div class="ac-gn-logo-container">
       <div class="ac-gn-logo-cont">
-        <img style="width: 100%;height: 100%" src="../resources/images/logo.png">
+        <img style="width: 100%;height: 100%" src="../resources/images/logo.png" alt="Logo">
       </div>
     </div>
     <div class="header_bar">
       <nav class="ac-globalnav">
         <div class="ac-gn-content">
           <ul class="ac-gn-list">
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-Sidebar">
-              <a href="#" class="openSidebarLink ac-gn-link ac-gn-link-Sidebar">X</a>
-            </li>
             <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
               <a class="ac-gn-link ac-gn-link-home" href="/public/home">Home</a>
             </li>
@@ -35,24 +35,7 @@
               <a class="ac-gn-link ac-gn-link-home" href="/public/project">Projects</a>
             </li>
             <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
-              <a class="ac-gn-link ac-gn-link-home" href="/public/404">404</a>
-              <ul class="ac-gn-sub-list">
-                <li class="ac-gn-sun-item ac-gn-sub-item-menu ac-gn-sub-blank">
-                  <a class="ac-gn-sub-link ac-gn-sub-link-blank" href="müllengmbh/medienformate_galerie.html">Bildergalerie</a>
-                </li>
-                <li class="ac-gn-sun-item ac-gn-sub-item-menu ac-gn-sub-blank">
-                  <a class="ac-gn-sub-link ac-gn-sub-link-blank" href="müllengmbh/medienformate_videos.html">Videos</a>
-                </li>
-                <li class="ac-gn-sun-item ac-gn-sub-item-menu ac-gn-sub-blank">
-                  <a class="ac-gn-sub-link ac-gn-sub-link-blank" href="müllengmbh/medienformate_pdf.html">PDF</a>
-                </li>
-              </ul>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
-                            <a class="ac-gn-link ac-gn-link-home" href="/public/impressum">Impressum</a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
-                            <a class="ac-gn-link ac-gn-link-home" href="/public/impressum">Impressum</a>
+              <a class="ac-gn-link ac-gn-link-home" href="/public/about">About us</a>
             </li>
             <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
               <a class="ac-gn-link ac-gn-link-home" href="/public/impressum">Impressum</a>
@@ -60,17 +43,15 @@
           </ul>
         </div>
       </nav>
-      <div class="search_frame">
-        <div class="filter search_spacing">
-          <i class="fa fa-filter w3-xlarge" aria-hidden="true"></i>
-        </div>
-        <div class="search_icon search_spacing ">
-          <i class="fa fa-search w3-xlarge" aria-hidden="true"></i>
-        </div>
-        <div class="search search_spacing">
-          <input class="Search_input" id="searchInput" placeholder="Search..." autocomplete="on" aria-label="Search field">
-        </div>
-      </div>
+      <!--div class="search_frame">
+          <div class="filter search_spacing">
+              <ul class="ac-gn-list">
+                  <li class="ac-gn-item ac-gn-item-menu ac-gn-Home">
+                      <a class="ac-gn-link ac-gn-link-home" href="/public/login"><i class="fa-solid fa-right-to-bracket w3-w3-xlarge" aria-hidden="true"></i></a>
+                  </li>
+              </ul>
+          </div>
+      </div-->
       <div class="dropdown">
         <button class="dropbtn">☰
           <i class="fa fa-caret-down"></i>
@@ -78,7 +59,16 @@
         <div class="dropdown-content">
           <ul class="ac-dn-list">
             <li class="ac-dn-item ac-dn-item-menu ac-dn-Home">
-              <a class="ac-dn-link ac-dn-link-home" href="/home">404</a>
+              <a class="ac-dn-link ac-dn-link-home" href="/public/home">Home</a>
+            </li>
+            <li class="ac-dn-item ac-dn-item-menu ac-dn-Home">
+              <a class="ac-dn-link ac-dn-link-home" href="/public/project">Projects</a>
+            </li>
+            <li class="ac-dn-item ac-dn-item-menu ac-dn-Home">
+              <a class="ac-dn-link ac-dn-link-home" href="/public/about">About us</a>
+            </li>
+            <li class="ac-dn-item ac-dn-item-menu ac-dn-Home">
+              <a class="ac-dn-link ac-dn-link-home" href="/public/impressum">Impressum</a>
             </li>
           </ul>
         </div>
@@ -90,7 +80,22 @@
     <div class="sidebar">
       <ul  class="sc-gn-list">
         <li class="sc-gn-item sc-gn-item-menu sc-gn-Home">
-          <a class="sc-gn-link sc-gn-link-home" href="/home">404</a>
+          <a class="sc-gn-link sc-gn-link-home" href="/public/home">Home</a>
+        </li>
+        <li class="sc-gn-item sc-gn-item-menu sc-gn-Home">
+          <a class="sc-gn-link sc-gn-link-home" href="/public/project">Projects</a>
+        </li>
+        <li class="sc-gn-item sc-gn-item-menu sc-gn-Home">
+          <a class="sc-gn-link sc-gn-link-home" href="/public/about">About us</a>
+        </li>
+        <li class="sc-gn-item sc-gn-item-menu sc-gn-Home">
+          <a class="sc-gn-link sc-gn-link-home" href="/public/impressum">Impressum</a>
+        </li>
+        <li class="sc-gn-item sc-gn-item-menu sc-gn-Home">
+          <a class="sc-gn-link sc-gn-link-home" href="/public/login">Login</a>
+        </li>
+        <li class="sc-gn-item sc-gn-item-menu sc-gn-Home">
+          <a class="sc-gn-link sc-gn-link-home" href="/public/404">404</a>
         </li>
         <li class="sc-gn-item sc-gn-item-menu sc-gn-Sidebar">
           <a href="#" class="closeButton sc-gn-link sc-gn-link-Sidebar" onclick="sidebarInstance.closeSidebar()">✕ Close Sidebar</a>

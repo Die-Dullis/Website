@@ -3,6 +3,7 @@
     color: #fff;
     padding: 50px 0;
     border-top: 1px solid #ffffff;
+    font-family: system-ui, sans-serif;
 }
 
 .footer-content {
@@ -44,5 +45,5 @@
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid #ffffff;
-    box-shadow: 13px -8px 20px 8px rgb(119, 255, 0), 1px 1px 20px 8px rgb(0 255 244), -8px 6px 20px 8px #0101ff;
+    box-shadow: 13px -8px 20px 8px var(--primary1), 1px 1px 20px 8px var(--primary2), -8px 6px 20px 8px var(--primary3);
 }
